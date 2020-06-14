@@ -40,7 +40,7 @@ const menu = function() {
         },
     ]).then(workers => {
 
-        console.log(workers);
+        
 
         role = workers['Employee Role'];
         console.log(role);
@@ -62,7 +62,7 @@ const employeeDetails = function() {
                 }
             ]).then(handle => {
 
-                console.log(handle);
+               
                 github = handle["GitHub Username"];
                 console.log(github);
                 empDetailsCont();
@@ -78,7 +78,7 @@ const employeeDetails = function() {
                     message: "What is the manager's office number?"
                 }
             ]).then(office => {
-                console.log(office);
+                
                 officeNumber = office["Office Number"];
                 console.log(officeNumber);
                 empDetailsCont();
@@ -90,13 +90,13 @@ const employeeDetails = function() {
             inquirer.prompt([
                 {
                     type: 'input',
-                    name: "Sponsoring School",
+                    name: "School",
                     message: "Which school is the intern attending?"
                 }
             ]).then(sponsor => {
 
-                console.log(sponsor);
-                school = sponsor["Sponsoring School"];
+               
+                school = sponsor["School"];
                 console.log(school);
                 empDetailsCont();
             })
@@ -106,8 +106,7 @@ const employeeDetails = function() {
         case 'END INPUT':
 
             FS();
-            // generateMarkdown();
-            // trying to put my readme generator into this
+
             
             return;
             
