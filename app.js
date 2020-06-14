@@ -14,7 +14,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 // ___________________________________________________________
 // ___________________________________________________________
 const render = require("./lib/htmlRenderer");
-const generateMarkdown = require("./test/GoodReadMeGenerator-UCDBC/index.js");
+// const Markdown = require("./templates/generateMarkdown.js");
 // ___________________________________________________________
 // ___________________________________________________________
 
@@ -106,7 +106,9 @@ const employeeDetails = function() {
         case 'END INPUT':
 
             FS();
-
+            // generateMarkdown();
+            // trying to put my readme generator into this
+            
             return;
             
     }
